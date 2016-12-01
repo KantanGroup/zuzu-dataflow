@@ -54,3 +54,9 @@
   ```
 
 You'll notice the following in ‘Local’ Server console.
+
+`Step 8` - Open dashboard
+
+  ```
+  http://localhost:9393/dashboard
+  ```
