@@ -29,16 +29,19 @@
   ```
   # java -jar spring-cloud-dataflow-server-local-1.1.0.RELEASE.jar
   ```
-  Running with Custom Maven Settings and/or Behind a Proxy
+  Running with Custom Maven Settings and/or Behind a Proxy and database MySQL
   
   ```
-  # java -jar spring-cloud-dataflow-server-local-1.1.0.RELEASE.jar --maven.proxy.protocol=https --maven.proxy.host=<host> --maven.proxy.port=<port>
+  # java -jar spring-cloud-dataflow-server-local-1.1.0.RELEASE.jar --maven.proxy.protocol=https --maven.proxy.host=<host> --maven.proxy.port=<port> --spring.datasource.url="jdbc:mysql://localhost:3306/dataflows?useUnicode=true&characterEncoding=UTF-8&useSSL=false" --spring.datasource.username=<username> --spring.datasource.password=<password> --spring.datasource.driver-class-name=org.mariadb.jdbc.Driver
+
+
+
   ```
 
 `Step 5` - Launch Shell 
   
   ```
-  #java -jar spring-cloud-dataflow-shell-1.1.0.RELEASE.jar
+  # java -jar spring-cloud-dataflow-shell-1.1.0.RELEASE.jar
   ```
 
 `Step 6` - Import all the out-of-the-box application coordinates in bulk 
